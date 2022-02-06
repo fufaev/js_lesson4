@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>60Пример</title>
+</head>
+
+<body>
+  <script>
+      const n = prompt('Введите порядковый номер числа Фибоначчи');
+
+      let fib = () => {
+          let arrF = [0, 1, 1];
+          
+          for (let i = 3; i <= n; i++) {
+            arrF.push(arrF[i - 2] + arrF[i - 1]);
+          }
+          return arrF[n];
+        }
+
+      /*
+      *проверка на пустой ввод
+      *проверка на ввод пробелов
+      *проверка на число
+      *проверка на ввод меньше нуля
+      *проверка на ввод больше 1476
+      */
+
+      if (n.length == 0) alert('Пустой ввод не подойдет');
+
+          else if (n.trim() == '') alert('Пробел не подойдёт, нужно число');
+
+              else if (isNaN(n)) alert('Неверный ввод, нужно число');
+
+                    else if (n > 1476) alert('JavaScript не может обработать числа Фибоначчи выше 1476 из-за переполнения значения по стандарту IEEE-754');
+
+                          else if (n == 0) alert('Число Фибоначи 0 равняется нулю');
+
+                                else if (n < 0) alert('Число Фибоначи не может быть меньше нуля');
+
+                                      else {
+                                          fib(n);
+
+                                          alert('Число Фибоначчи ' + n + ' равно ' + fib(n));
+                                      }
+
+  </script>
+
+</body>
+
+</html>

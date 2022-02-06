@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>41Пример 1 с массивами</title>
+</head>
+
+<body>
+  <script>
+      const fill = (arraySize, value) => new Array(arraySize).fill(value);
+      const data = +prompt('Введите количество переменных в массиве', '');
+      const valueToFill = prompt('Введите переменную для заполнения всего массива', '');;
+      alert('Ваш массив: ' + fill(data, valueToFill));
+  </script>
+
+</body>
+
+</html>

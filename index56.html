@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>56Пример</title>
+</head>
+
+<body>
+  <script>
+      let arr1 = [1,2,3,4,5];
+
+      alert('Имеем один массив: ' + arr1);
+
+      arr1.splice(1,0,['a','b']);
+      arr1.splice(5,0,'c');
+      arr1.splice(7, 0, 'e');
+      
+      alert('Нужно получить новый массив вставив новые значения (a,b), (с) и (е) с помощью функции .splice.\nПолучаем: ' + arr1);
+      
+  </script>
+
+</body>
+
+</html>

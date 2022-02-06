@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>58.1Пример</title>
+</head>
+
+<body>
+  <script>
+      let arr1 = [5, , 2, , 18];
+
+      alert('Имеем разряженный массив: ' + arr1);
+      alert('С помощью цикла for нужно вывести все элементы этого массива');
+
+      for(let i = 0; i < arr1.length; i++) {
+          if(arr1[i] != undefined)
+              document.write('Элемент массива под номером ' + (i + 1) + ' равен ' + arr1[i] + '<br>');
+          else
+              document.write('Элемент массива под номером ' + (i + 1) + ' равен пустому или неверному значению<br>');
+      }
+      
+  </script>
+
+</body>
+
+</html>
